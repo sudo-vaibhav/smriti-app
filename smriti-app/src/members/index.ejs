@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <%- require('../partials/commonHeadBeforeEnd/commonHeadBeforeEnd.ejs')() %>
+  </head>
+  <body>
+    <div class="container">
+      <%- require('../partials/goBack/goBack.ejs')() %>
+      <main>
+        <div class="d-flex flex-column align-items-center">
+          <h4>Members</h4>
+          <div class="row">
+            <div class="col-10 offset-1 text-center">
+              A plave to store all the details of the member whom your patient
+              must know
+            </div>
+          </div>
+          <a href="/members/add">
+            <div class="badge badge-pill">+&nbsp;&nbsp;&nbsp;Add a routine</div>
+          </a>
+          <!-- <div id="edit-icon-wrapper">
+            <img src="/assets/edit-icon.svg" alt="" />
+          </div> -->
+          <div class="w-100">
+            <ul id="menu-unordered-list" data-collection="members">
+              <li>
+                <div class="menu-flexbox-wrapper">
+                  <div class="d-flex">
+                    <img
+                      class="menu-item-image"
+                      src="/assets/reminder-task-icon.svg"
+                      alt=""
+                    />
+                    <div class="ml-2">
+                      <span class="item-heading"> Medicines</span>
+                      <p class="item-description">
+                        Reminds you to take medicines
+                      </p>
+                    </div>
+                  </div>
+                  <div><h5 class="font-weight-bold">7:30 a.m.</h5></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
